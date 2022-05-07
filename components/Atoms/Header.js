@@ -11,8 +11,8 @@ export default function Header({ title, desc, bold }) {
           <p
             className={
               bold
-                ? "font-bold text-black uppercase tracking-widest"
-                : "text-gray-700 uppercase tracking-widest"
+                ? "mt-5 font-bold text-black uppercase tracking-widest"
+                : "mt-5 text-gray-700 uppercase tracking-widest"
             }
           >
             {desc}
