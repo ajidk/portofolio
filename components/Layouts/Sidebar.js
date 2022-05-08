@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
+import { ImMe } from "../../assets/img";
 import { Gap } from "../Atoms";
 import ContactIcons from "../Atoms/ContactIcons";
 
@@ -10,9 +12,12 @@ export default function Sidebar({ children }) {
     <>
       <div className="xs:flex xs:items-center xs:flex-col xs:mt-16 md:flex md:items-center md:flex-col md:mt-16 xl:block">
         <a href="#" className="">
-          <img
-            src="https://mldangelo.com/images/me.jpg"
-            className="rounded-full w-10em"
+          <Image
+            src={ImMe}
+            className="rounded-full max-h-16"
+            width={'200px'}
+            height={'200px'}
+            
           />
         </a>
         <Gap height={24} />
@@ -54,7 +59,7 @@ export default function Sidebar({ children }) {
       <ContactIcons />
       <Gap height={40} />
       <div className="text-gray-500 text-sm">
-        suraji visit https://ajidk.netlify.com/
+        suraji visit https://ajidk.netlify.com/a
       </div>
     </>
   );

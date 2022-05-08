@@ -1,10 +1,12 @@
 import React from "react";
 import Gap from "./Gap";
 
-export default function List({ company, daterange, points }) {
+export default function List({ company, departement, daterange, points }) {
   return (
     <div className="my-4">
-      <div className="uppercase text-lg font-bold tracking-widest text-gray-600">{company}</div>
+      <div className="uppercase text-lg font-bold tracking-widest text-gray-600">
+        {company} {departement && <span> - {departement}</span>}
+      </div>
       <Gap height={4} />
       <div className="text-gray-400">{daterange}</div>
       <Gap height={4} />

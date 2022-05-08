@@ -52,6 +52,7 @@ export default function Experience() {
         return (
           <List
             key={data.id}
+            // departement='founder'
             company={data.company}
             daterange={data.daterange}
             points={data.points}
