@@ -3,7 +3,7 @@ import React from "react";
 export default function Header({ title, desc, bold }) {
   return (
     <>
-      <div className="px-20 bg-white pt-16 pb-12">
+      <div className="xs:px-8 md:px-12 lg:px-16 xl:18  2xl:px-20 bg-white pt-16 pb-12">
         <div className="font-bold tracking-widest text-2xl text-black uppercase">
           {title}
         </div>
