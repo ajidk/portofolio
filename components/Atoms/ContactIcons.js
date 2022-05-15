@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/link-passhref */
 /* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { IcFb, IcGithub, IcIg, IcLinkIn, IcMail, IcTweet } from "../../assets";
 
@@ -42,9 +44,9 @@ export default function ContactIcons() {
       {datas.map((data) => {
         return (
           <div key={data.id}>
-            <a href={data.link} className='pr-6'>
+            <Link href={data.link} className='pr-6'>
               <Image src={data.icon} />
-            </a>
+            </Link>
           </div>
         );
       })}

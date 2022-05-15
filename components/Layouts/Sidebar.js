@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { ImMe } from "../../assets/img";
 import { Gap } from "../Atoms";
@@ -11,25 +12,25 @@ export default function Sidebar({ children }) {
   return (
     <>
       <div className="xs:flex xs:items-center xs:flex-col xs:mt-16 md:flex md:items-center md:flex-col md:mt-16 xl:block">
-        <a href="#" className="">
+        <Link href="#" className="">
           <Image
             src={ImMe}
             className="rounded-full max-h-16"
             width={"200px"}
             height={"200px"}
           />
-        </a>
+        </Link>
         <Gap height={24} />
         <div className=" text-3xl font-bold uppercase tracking-widest">
           suraji
         </div>
         <Gap height={24} />
-        <a
+        <Link
           href="#"
           className="uppercase text-xl border-b border-gray-400 border-dotted tracking-widest text-gray-500"
         >
           surajidk12@gmail.com
-        </a>
+        </Link>
       </div>
       <Gap height={65} />
       <div className="border-b border-gray-300" />
@@ -43,19 +44,19 @@ export default function Sidebar({ children }) {
         course at qodr for 3 years.
       </div>
       <Gap height={55} />
-      <a
+      <Link
         href="/resume"
         className="border border-gray-500 text-gray-600 px-6 py-3 uppercase font-bold text-xs"
       >
         learn more
-      </a>
+      </Link>
       <Gap height={70} />
       <div className="border-b border-gray-300" />
       <Gap height={55} />
       <ContactIcons />
       <Gap height={40} />
       <div className="text-gray-500 text-sm">
-        suraji visit https://ajidk.netlify.com/a
+        suraji visit https://ajidk.netlify.com
       </div>
     </>
   );

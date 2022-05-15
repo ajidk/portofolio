@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Menu() {
@@ -16,74 +17,74 @@ export default function Menu() {
             <button className="h-16 flex items-center justify-end pr-10" onClick={onShow}>
               x
             </button>
-            <a
+            <Link
               href="about"
               className="px-4 py-5 uppercase border-y text-xs border-dashed border-b-gray-300 text-black mr-10"
             >
               about
-            </a>
-            <a
+            </Link>
+            <Link
               href="resume"
               className="px-4 py-5 uppercase border-b text-xs border-dashed border-b-gray-300 text-black mr-10"
             >
               resume
-            </a>
-            <a
+            </Link>
+            <Link
               href="projects"
               className="px-4 py-5 uppercase border-b text-xs border-dashed border-b-gray-300 text-black mr-10"
             >
               projects
-            </a>
-            <a
+            </Link>
+            <Link
               href="stats"
               className="px-4 py-5 uppercase border-b text-xs border-dashed border-b-gray-300 text-black mr-10"
             >
               stats
-            </a>
-            <a
+            </Link>
+            <Link
               href="contact"
               className="px-4 py-5 uppercase text-xs border-b border-b-gray-300 border-dashed text-black"
             >
               contact
-            </a>
+            </Link>
           </div>
         </>
       )}
       <div className="flex xs:justify-between xl:justify-start items-center border-b border-b-gray-200 bg-white">
-        <a
+        <Link
           href="/"
           className="text-xs uppercase font-bold border-r border-r-gray-200 py-6 px-10"
         >
           aji dk
-        </a>
+        </Link>
         <div className="xs:hidden md:block">
-          <a
+          <Link
             href="about"
             className="px-10 uppercase border-r text-xs border-r-gray-300 text-gray-500"
           >
             about
-          </a>
-          <a
+          </Link>
+          <Link
             href="resume"
             className="px-10 uppercase border-r text-xs border-r-gray-300 text-gray-500"
           >
             resume
-          </a>
-          <a
+          </Link>
+          <Link
             href="projects"
             className="px-10 uppercase border-r text-xs border-r-gray-300 text-gray-500"
           >
             projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="stats"
             className="px-10 uppercase border-r text-xs border-r-gray-300 text-gray-500"
           >
             stats
-          </a>
-          <a href="contact" className="px-10 uppercase text-xs text-gray-500">
+          </Link>
+          <Link href="contact" className="px-10 uppercase text-xs text-gray-500">
             contact
-          </a>
+          </Link>
         </div>
         <button
           className="xs:flex md:hidden xs:flex-row-reverse pr-10"
