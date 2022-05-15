@@ -13,9 +13,11 @@ export default function Skills() {
         <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">react js</button>
         <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">wordpress</button>
         <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">git</button>
-        <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">htiml</button>
+        <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">html</button>
         <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">css</button>
         <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">react native</button>
+        <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">tailwind</button>
+        <button className="bg-gray-100 text-sm uppercase py-2 px-4 m-4">bootstrap</button>
       </div>
     </div>
   );

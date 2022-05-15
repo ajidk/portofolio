@@ -50,7 +50,8 @@ export default function Sidebar({ children }) {
       <ContactIcons />
       <Gap height={40} />
       <div className="text-gray-500 text-sm">
-        suraji visit https://ajidk.netlify.com
+        suraji visit{" "}
+        <Link href="https://ajidk.vercel.app/">https://ajidk.vercel.app</Link>
       </div>
     </>
   );
