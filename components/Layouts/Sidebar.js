@@ -15,9 +15,8 @@ export default function Sidebar({ children }) {
           <Image
             src={ImMe}
             className="rounded-full max-h-16"
-            width={'200px'}
-            height={'200px'}
-            
+            width={"200px"}
+            height={"200px"}
           />
         </a>
         <Gap height={24} />
@@ -38,10 +37,7 @@ export default function Sidebar({ children }) {
       <h2 className="uppercase text-sm font-semibold text-gray-700">about</h2>
       <Gap height={24} />
       <div className="xl:leading-8 font-thin xl:tracking-widest text-gray-500 text-sm">
-        {/* Hi, I'm Michael. I like building things. I am a Stanford ICME graduate,
-        YC Alumni, and the co-founder and CTO of Arthena. Before Arthena I was
-        at Matroid, Planet, Planetary Resources, Facebook, and SEDS. */}
-        Hi, I'm Suraji. I like building things. I am a SMAN 1 PENAWARTAMA
+        Hi, Im Suraji. I like building things. I am a SMAN 1 PENAWARTAMA
         graduate, IPA Alumni. After graduating from high school, I worked in
         Bali as a laundry for a year. after that I took the programmer bootcamp
         course at qodr for 3 years.
