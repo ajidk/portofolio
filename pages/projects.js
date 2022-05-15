@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-children-prop */
 import moment from "moment";
+import Image from "next/image";
 import React from "react";
 import { ImQodr, ImQodr1 } from "../assets";
 
@@ -43,7 +44,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <img src={data.link} />
+              <Image src={data.link} />
               <div className="p-6 w-full bg-white opacity-80 absolute bottom-0 text-gray-500">
                 {data.desc}
               </div>
