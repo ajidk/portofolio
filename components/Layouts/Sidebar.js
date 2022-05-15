@@ -12,7 +12,7 @@ export default function Sidebar({ children }) {
   return (
     <>
       <div className="xs:flex xs:items-center xs:flex-col xs:mt-16 md:flex md:items-center md:flex-col md:mt-16 xl:block">
-        <Link href="#" className="">
+        <Link href="#">
           <Image
             src={ImMe}
             className="rounded-full max-h-16"
@@ -25,12 +25,9 @@ export default function Sidebar({ children }) {
           suraji
         </div>
         <Gap height={24} />
-        <Link
-          href="#"
-          className="uppercase text-xl border-b border-gray-400 border-dotted tracking-widest text-gray-500"
-        >
-          surajidk12@gmail.com
-        </Link>
+        <span className="uppercase text-xl border-b border-gray-400 border-dotted tracking-widest text-gray-500">
+          <Link href="#">surajidk12@gmail.com</Link>
+        </span>
       </div>
       <Gap height={65} />
       <div className="border-b border-gray-300" />
@@ -44,12 +41,9 @@ export default function Sidebar({ children }) {
         course at qodr for 3 years.
       </div>
       <Gap height={55} />
-      <Link
-        href="/resume"
-        className="border border-gray-500 text-gray-600 px-6 py-3 uppercase font-bold text-xs"
-      >
-        learn more
-      </Link>
+      <span className="border border-gray-500 text-gray-600 px-6 py-3 uppercase font-bold text-xs">
+        <Link href="resume">learn more</Link>
+      </span>
       <Gap height={70} />
       <div className="border-b border-gray-300" />
       <Gap height={55} />

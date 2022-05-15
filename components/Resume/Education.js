@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { Gap } from "../Atoms";
 
@@ -33,9 +32,9 @@ export default function Education() {
               {data.degree}
             </div>
             <div className="text-sm tracking-widest capitalize text-gray-500">
-              <Link href="#" className="border-b border-dotted">
+              <a href="#" className="border-b border-dotted">
                 {data.school}
-              </Link>
+              </a>
               , {data.year}
             </div>
           </div>

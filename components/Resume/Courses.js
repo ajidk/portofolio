@@ -1,6 +1,4 @@
-/* eslint-disable @next/next/link-passhref */
 /* eslint-disable react/jsx-no-target-blank */
-import Link from "next/link";
 import React from "react";
 import { Gap } from "../Atoms";
 
@@ -66,14 +64,14 @@ export default function Courses() {
         {courses.map((course) => {
           return (
             <div key={course.number} className="flex">
-              <Link
+              <a
                 href={course.link}
                 target="_blank"
                 className="border-b border-gray-500 flex border-dotted"
               >
                 <h2 className="font-bold "> {course.number}: </h2>
                 <p className="text-gray-500 flex-1">{course.title}</p>
-              </Link>
+              </a>
               <div className="mx-2"> &#8226;</div>
             </div>
           );

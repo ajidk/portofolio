@@ -44,8 +44,10 @@ export default function ContactIcons() {
       {datas.map((data) => {
         return (
           <div key={data.id}>
-            <Link href={data.link} className='pr-6'>
-              <Image src={data.icon} />
+            <Link href={data.link}>
+              <span className="pr-6">
+                <Image src={data.icon} />
+              </span>
             </Link>
           </div>
         );
