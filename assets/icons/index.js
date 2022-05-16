@@ -4,5 +4,6 @@ import IcGithub from "./github.svg";
 import IcIg from "./instagram.svg";
 import IcLinkIn from "./linkedin.svg";
 import IcTweet from "./twitter.svg";
+import IcWa from "./whatsapp.svg";
 
-export { IcFb, IcMail, IcGithub, IcIg, IcLinkIn, IcTweet };
+export { IcFb, IcMail, IcGithub, IcIg, IcLinkIn, IcTweet, IcWa };
