@@ -11,31 +11,30 @@ import { Gap, Main } from "../components";
 export default function Home() {
   const datas = [
     {
-      id: 1,
-      title: "nearest dollar",
-      subtitle: "2015 BVP Hackathon",
+      title: "landing page qodr",
+      subtitle:
+        "Qodr (/ˈkōdər/) adalah sebuah program pelatihan IT dan belajar Islam non-formal berbasis pondok",
       link: ImQodr,
-      date: "2015-11-20",
-      desc: "Built for a social impact hackathon. NearestDollar connected to your bank accounts, credit cards, or debit cards and rounded up your purchases to donate the balance to the charity of your choice.",
+      date: "2020-05-17",
+      desc: "Mencetak developer yang mengamalkan ajaran Islam Selain berlatih kemampuan teknologi informasi, santri juga belajar tentang agama Islam dan menerapkannya dalam kehidupan sehari-hari",
     },
-    {
-      id: 2,
-      title: "nearest dollar",
-      subtitle: "2015 BVP Hackathon",
-      link: ImQodr1,
-      date: "2015-11-20",
-      desc: "Built for a social impact hackathon. NearestDollar connected to your bank accounts, credit cards, or debit cards and rounded up your purchases to donate the balance to the charity of your choice.",
-    },
+    // {
+    //   title: "nearest dolla",
+    //   subtitle: "2015 BVP Hackathon",
+    //   link: ImQodr1,
+    //   date: "2015-11-20",
+    //   desc: "Built for a social impact hackathon. NearestDollar connected to your bank accounts, credit cards, or debit cards and rounded up your purchases to donate the balance to the charity of your choice.",
+    // },
   ];
   return (
     <Main
       title={"projects"}
       desc="a selection of projects that i'm not too ashamed of"
     >
-      {datas.map((data) => {
+      {datas.map((data, index) => {
         return (
           <>
-            <div className="border mb-12 relative text-sm">
+            <div className="border mb-12 relative text-sm" key={index}>
               <div className="p-6">
                 <div className="uppercase font-bold">{data.title}</div>
                 <Gap height={8} />

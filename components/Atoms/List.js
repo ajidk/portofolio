@@ -8,7 +8,7 @@ export default function List({ company, departement, daterange, points }) {
         {company} {departement && <span> - {departement}</span>}
       </div>
       <Gap height={4} />
-      <div className="text-gray-400">{daterange}</div>
+      <div className="text-gray-400 capitalize">{daterange}</div>
       <Gap height={4} />
       <ul className="list-disc ml-4">
         {points.map((job, index) => {

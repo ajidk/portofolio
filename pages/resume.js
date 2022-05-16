@@ -15,17 +15,17 @@ export default function Home() {
   return (
     <Main
       title={"resume"}
-      desc="education experience skills courses references"
+      desc="education experience skills"
       bold
     >
-      <Education />
-      <Gap height={24} />
       <Experience />
       <Gap height={24} />
       <Skills />
       <Gap height={24} />
-      <Courses />
+      <Education />
       <Gap height={24} />
+      {/* <Courses />
+      <Gap height={24} /> */}
       <References />
     </Main>
   );

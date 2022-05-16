@@ -1,39 +1,38 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable @next/next/link-passhref */
 /* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import { IcFb, IcGithub, IcIg, IcLinkIn, IcMail, IcTweet } from "../../assets";
 
 const datas = [
   {
     id: 1,
-    link: "#",
+    link: "https://github.com/ajidk",
     icon: IcGithub,
   },
   {
     id: 2,
-    link: "#",
+    link: "https://www.facebook.com/adjik16",
     icon: IcFb,
   },
   {
     id: 3,
-    link: "#",
+    link: "https://www.instagram.com/ajidk16/",
     icon: IcIg,
   },
   {
     id: 4,
-    link: "#",
+    link: "https://www.linkedin.com/in/suraji-dk-086668183/",
     icon: IcLinkIn,
   },
   {
     id: 5,
-    link: "#",
+    link: "https://twitter.com/ajidk16",
     icon: IcTweet,
   },
   {
     id: 6,
-    link: "#",
+    link: "mailto:surajidk12@gmail.com",
     icon: IcMail,
   },
 ];
@@ -44,11 +43,11 @@ export default function ContactIcons() {
       {datas.map((data) => {
         return (
           <div key={data.id}>
-            <Link href={data.link}>
-              <span className="pr-6">
+            <span className="pr-6 cursor-pointer">
+              <a target="_blank" href={data.link}>
                 <Image src={data.icon} />
-              </span>
-            </Link>
+              </a>
+            </span>
           </div>
         );
       })}

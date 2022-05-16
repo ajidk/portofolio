@@ -33,7 +33,7 @@ export default function About() {
   return (
     <Main title="about me" desc="(in about 1036 words)" bold>
       <Intro />
-      {datas.map((data, index) => {
+      {/* {datas.map((data, index) => {
         return (
           <List
             key={index}
@@ -42,7 +42,7 @@ export default function About() {
             points={data.points}
           />
         );
-      })}
+      })} */}
     </Main>
   );
 }

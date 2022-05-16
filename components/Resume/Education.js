@@ -33,7 +33,7 @@ export default function Education() {
               {data.degree}
             </div>
             <div className="text-sm tracking-widest capitalize text-gray-500">
-              <Link href="#" className="border-b border-dotted">
+              <Link href="" className="border-b border-dotted">
                 {data.school}
               </Link>
               , {data.year}

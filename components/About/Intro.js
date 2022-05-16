@@ -3,24 +3,30 @@ import React from "react";
 const Intros = [
   {
     name: "intro",
-    desc: "I am a co-founder and the CTO of Arthena where I build tools to price fine art quickly, accurately, and at scale. I also advise startups, and I invest in people and ideas through a small venture fund. I am particularly interested in projects that touch health and safety, imaging, social impact, and aerospace. If you think I can be helpful to you or would like to meet me, please feel free to get in touch.",
-  },
-  {
-    name: "currently",
-    desc: "At Arthena, I have learned how to build teams, manage people, shape culture, develop relationships with customers, sell enterprise products, and build on-line predictive models with technologies like Dask, Dagster, TensorFlow, and spaCy. I primarily work as a data engineer but have broad experience across Arthena’s stack.",
+    desc: [
+      "Hi, I’am Suraji from Metro Lampung, Mobile & Web Frontend Engineer with 2+ Years Experience in developing user interfaces. debugging and building a web and mobile applications incorporating a range of technologies. \n\n\n",
+      "Offering strong expertise in multiple programming languages, including HTML, CSS, and Javascript. \n\n\n",
+      "Seeking to secure a challenging position as a Mobile React Native or Web Frontend Enginee. \n\n\n",
+    ],
   },
 ];
 
 export default function Intro() {
   return (
     <>
-      {Intros.map((intro,index) => {
+      {Intros.map((intro, index) => {
         return (
-          <div key={index} className="mb-8">
-            <div className="uppercase text-lg font-bold tracking-widest text-gray-600">
+          <div key={index} className="">
+            <div className="uppercase text-lg font-bold tracking-widest text-gray-600 mb-4">
               {intro.name}
             </div>
-            <div className="text-gray-500 mt-2">{intro.desc}</div>
+            {intro.desc.map((job, index) => {
+              return (
+                <div key={index} className="text-gray-500 mb-6">
+                  {job}
+                </div>
+              );
+            })}
           </div>
         );
       })}
