@@ -56,7 +56,8 @@ export default function Sidebar({ children }) {
       <Gap height={40} />
       <div className="text-gray-500 text-sm">
         suraji visit{" "}
-        <Link href="https://ajidk.vercel.app/">https://ajidk.vercel.app</Link>
+        <Link href="https://ajidk.vercel.app/">https://ajidk.vercel.app</Link> {' '}
+        powered by <Link href="https://mldangelo.com/">MICHAEL D&apos;ANGELO</Link> custom use with tailwind
       </div>
     </>
   );

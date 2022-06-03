@@ -52,11 +52,6 @@ export default function Menu() {
             >
               <Link href="/projects">projects</Link>
             </span>
-            {/* <span className={`px-4 py-5 uppercase border-b text-xs border-dashed border-b-gray-300 text-black mr-10 ${
-              router.pathname === "/stats" ? "text-blue-500" : " text-gray-500"
-            }`}>
-              <Link href="/stats">stats</Link>
-            </span> */}
             <span
               className={`px-4 py-5 uppercase text-xs border-b border-b-gray-300 border-dashed text-black ${
                 router.pathname === "/contact"
